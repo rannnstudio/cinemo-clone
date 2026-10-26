@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="site-header">
-      <nav class="container">
+      <nav class="header-container">
         <h1>
           <a class="logo" href="#">
             <svg
@@ -54,20 +54,20 @@
       </nav>
     </header>
     <main>
-      <div class="page-produce">
+      <div class="page-introduce">
         <p>MY CINEMO</p>
-        <h2>마이페이지</h2>
+        <h2 class="main-mypage">마이페이지</h2>
         <p>취향을 모으고, 나만의 시간을 이어가세요.</p>
       </div>
-      <div class="basic-profile-container">
+      <div class="user-profile-container">
         <article id="mycard-container" class="mycard">
           <img src="" alt="욜로 기본프로필" />
           <div class="">
-            <h2>욜로</h2>
+            <h2 class="mycard-title">욜로</h2>
             <p>나만의 영화 노트</p>
             <p>2026년 10월부터 함께하는 중</p>
           </div>
-          <button type="button">
+          <button type="button" class="user-profile-button">
             <img src="" alt="" />
             <p>프로필 변경</p>
           </button>
@@ -100,7 +100,7 @@
               </div>
             </div>
             <h3 class="favorite-movie-title">고요의 궤도</h3>
-            <p>SF • 미스터리 • 15+</p>
+            <p class="movie-genre">SF • 미스터리 • 15+</p>
           </li>
           <li class="favorite-item">
             <div class="card-container">
@@ -126,7 +126,7 @@
               </div>
             </div>
             <h3 class="favorite-movie-title">파란 시간</h3>
-            <p>로맨스 • 드라마 • 12+</p>
+            <p class="movie-genre">로맨스 • 드라마 • 12+</p>
           </li>
           <li class="favorite-item">
             <div class="card-container">
@@ -152,7 +152,7 @@
               </div>
             </div>
             <h3 class="favorite-movie-title">숲에서 온 편지</h3>
-            <p>판타지 • 드라마 • 전체</p>
+            <p class="movie-genre">판타지 • 드라마 • 전체</p>
           </li>
           <li class="favorite-item">
             <div class="card-container">
@@ -178,46 +178,46 @@
               </div>
             </div>
             <h3 class="favorite-movie-title">밤의 잠수부</h3>
-            <p>스릴러 • 미스터리 • 15+</p>
+            <p class="movie-genre">스릴러 • 미스터리 • 15+</p>
           </li>
         </ul>
       </article>
-      <article>
+      <article id="account-container" class="account-set">
         <h2>계정 설정</h2>
         <section>
-          <ul>
+          <ul class="account-list">
             <li>
-              <div>
+              <div class="ac-setting">
                 <p>이메일</p>
                 <p>yolo202617@example.com</p>
-                <button type="">변경</button>
+                <button type="" class="ac-button">변경</button>
               </div>
             </li>
             <li>
-              <div>
+              <div class="ac-setting">
                 <p>비밀번호</p>
                 <p>···········</p>
-                <button type="">변경</button>
+                <button type="" class="ac-button">변경</button>
               </div>
             </li>
             <li>
-              <div>
+              <div class="ac-setting">
                 <p>멤버십</p>
                 <p>베이식 · 월 9,500원</p>
-                <button type="">관리</button>
+                <button type="" class="ac-button">관리</button>
               </div>
             </li>
             <li>
-              <div>
+              <div class="ac-setting">
                 <p>표시 언어</p>
                 <p>한국어</p>
-                <button type="">변경</button>
+                <button type="" class="ac-button">변경</button>
               </div>
             </li>
           </ul>
-          <div>
+          <div class="now-condition">
             <p>내 계정으로 접속중입니다.</p>
-            <button type="button">
+            <button type="ac-logout-button">
               <span>로그아웃</span>
             </button>
           </div>
@@ -225,8 +225,8 @@
       </article>
     </main>
     <footer>
-      <dlv>
-        <div>
+      <div class="footer">
+        <div class="footer-menu">
           <a href="#">서비스 소개</a>
           <a href="#">이용약관</a>
           <a href="#">개인정보처리방침</a>
@@ -237,7 +237,7 @@
           허구이며 실제 결제·재생은 제공하지 않습니다.
         </p>
         <p>© 2026 CINEMO. A FICTIONAL STREAMING PROJECT.</p>
-      </dlv>
+      </div>
     </footer>
   </body>
 </html>
