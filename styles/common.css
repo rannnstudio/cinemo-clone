@@ -1,0 +1,52 @@
+:root {
+  --page-bg: #101113;
+  --surface: #f28d77;
+  --text: #f3f1ed;
+  --text2: #7e8289;
+  --text3: #acaeb3;
+  --accent: #232529;
+  --border: #303237;
+  --btn-text: #241512;
+}
+
+body {
+  background-color: #101113;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 64px;
+  border-top: 1px solid #303237;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 32px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  height: auto;
+  color: var(--text3);
+}
+
+.footer-notice {
+  margin-top: 20px;
+  font-size: 11px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--text2);
+}
+
+.footer-copyright {
+  font-size: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-top: 20px;
+  color: var(--text2);
+}
