@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/mypage.css" />
+    <link rel="stylesheet" href="./styles/mypage.css" />
   </head>
   <body>
     <header class="site-header">
@@ -63,19 +64,45 @@
       <div class="user-profile-container">
         <article class="mycard-container">
           <div class="user-profile">
-            <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_2_7958)">
-            <rect width="88" height="88" rx="8" fill="#718C91"/>
-            <circle cx="133.76" cy="28.8801" r="60.3" stroke="#F3F1ED" stroke-opacity="0.313726"/>
-            <circle cx="34.2" cy="163.4" r="86.9" stroke="#101113" stroke-opacity="0.188235"/>
-            <circle cx="122.74" cy="122.74" r="4.18" fill="#24272D"/>
-            </g>
-            <text x="45" y="60" fill="#F3F1ED" font-size="42.24" text-anchor="middle">Y</text>
-            <defs>
-            <clipPath id="clip0_2_7958">
-            <rect width="152" height="152" rx="8" fill="white"/>
-            </clipPath>
-            </defs>
+            <svg
+              width="88"
+              height="88"
+              viewBox="0 0 88 88"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2_7958)">
+                <rect width="88" height="88" rx="8" fill="#718C91" />
+                <circle
+                  cx="133.76"
+                  cy="28.8801"
+                  r="60.3"
+                  stroke="#F3F1ED"
+                  stroke-opacity="0.313726"
+                />
+                <circle
+                  cx="34.2"
+                  cy="163.4"
+                  r="86.9"
+                  stroke="#101113"
+                  stroke-opacity="0.188235"
+                />
+                <circle cx="122.74" cy="122.74" r="4.18" fill="#24272D" />
+              </g>
+              <text
+                x="45"
+                y="60"
+                fill="#F3F1ED"
+                font-size="42.24"
+                text-anchor="middle"
+              >
+                Y
+              </text>
+              <defs>
+                <clipPath id="clip0_2_7958">
+                  <rect width="152" height="152" rx="8" fill="white" />
+                </clipPath>
+              </defs>
             </svg>
             <div class="user-name-introduction">
               <h2 class="mycard-title">욜로</h2>
@@ -84,160 +111,203 @@
             </div>
           </div>
           <button type="button" class="user-profile-button">
-            <img class="profile-img" src="asset/users.svg" alt="프로필 이미지"/>
+            <img
+              class="profile-img"
+              src="asset/users.svg"
+              alt="프로필 이미지"
+            />
             <p>프로필 변경</p>
           </button>
         </article>
       </div>
       <article class="my-favorite-container">
-        <h3 class="mypage-pick">내가 찜한 콘텐츠</h3>
-        <ul class="favorite-list">
-          <li class="favorite-item">
-            <div class="card-container">
-              <img src="" alt="저녁 해변 걷는 중"/>
-              <div class="checkbox-container">
-                <input type="checkbox" id="check-1" class="checkbox-input"/>
-                <label for="check-1">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13.3328 4L6.0002 11.3328L2.6672 7.99971"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke="#F28D77"
+        <div class="mypage-pick-container">
+          <h3 class="mypage-pick">내가 찜한 콘텐츠</h3>
+          <p>4편</p>
+        </div>
+        <div class="mypage-favorite-container">
+          <ul class="favorite-list">
+            <li class="favorite-item">
+              <div>
+                <a href="#" class="card-container">
+                  <img
+                    src="./asset/Image quiet-orbit.jpg"
+                    width="310"
+                    height="174"
+                    alt="저녁 해변 걷는 중"
+                  />
+                  <div class="checkbox-container">
+                    <input
+                      type="checkbox"
+                      id="check-1"
+                      class="checkbox-input"
                     />
-                  </svg>
-                </label>
+                    <label for="check-1">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.3328 4L6.0002 11.3328L2.6672 7.99971"
+                          stroke-width="1.7"
+                          stroke-linecap="round"
+                          stroke="#F28D77"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                  <div>
+                    <h4 class="favorite-movie-title">고요의 궤도</h4>
+                    <p class="movie-genre">SF • 미스터리 • 15+</p>
+                  </div>
+                </a>
               </div>
-            </div>
-            <p class="favorite-movie-title">고요의 궤도</p>
-            <p class="movie-genre">SF • 미스터리 • 15+</p>
-          </li>
-          <li class="favorite-item">
-            <div class="card-container">
-              <img src="" alt="도시 야경보는 커플" />
-              <div class="checkbox-container">
-                <input type="checkbox" id="check-2" class="checkbox-input" />
-                <label for="check-2">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13.3328 4L6.0002 11.3328L2.6672 7.99971"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke="#F28D77"
-                    />
-                  </svg>
-                </label>
-              </div>
-            </div>
-            <p class="favorite-movie-title">파란 시간</p>
-            <p class="movie-genre">로맨스 • 드라마 • 12+</p>
-          </li>
-          <li class="favorite-item">
-            <div class="card-container">
-              <img src="" alt="숲속 안의 오두막" />
-              <div class="checkbox-container">
-                <input type="checkbox" id="check-3" class="checkbox-input" />
-                <label for="check-3">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13.3328 4L6.0002 11.3328L2.6672 7.99971"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke="#F28D77"
-                    />
-                  </svg>
-                </label>
-              </div>
-            </div>
-            <p class="favorite-movie-title">숲에서 온 편지</p>
-            <p class="movie-genre">판타지 • 드라마 • 전체</p>
-          </li>
-          <li class="favorite-item">
-            <div class="card-container">
-              <img src="" alt="바다속 잠수부" />
-              <div class="checkbox-container">
-                <input type="checkbox" id="check-4" class="checkbox-input" />
-                <label for="check-4">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13.3328 4L6.0002 11.3328L2.6672 7.99971"
-                      stroke-width="1.7"
-                      stroke-linecap="round"
-                      stroke="#F28D77"
-                    />
-                  </svg>
-                </label>
-              </div>
-            </div>
-            <p class="favorite-movie-title">밤의 잠수부</p>
-            <p class="movie-genre">스릴러 • 미스터리 • 15+</p>
-          </li>
-        </ul>
+            </li>
+            <li class="favorite-item">
+              <a href="#" class="card-container">
+                <img
+                  src="./asset/Image blue-hour.jpg"
+                  width="310"
+                  height="174"
+                  alt="도시 야경보는 커플"
+                />
+                <div class="checkbox-container">
+                  <input type="checkbox" id="check-2" class="checkbox-input" />
+                  <label for="check-2">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.3328 4L6.0002 11.3328L2.6672 7.99971"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke="#F28D77"
+                      />
+                    </svg>
+                  </label>
+                </div>
+                <h4 class="favorite-movie-title">파란 시간</h4>
+                <p class="movie-genre">로맨스 • 드라마 • 12+</p>
+              </a>
+            </li>
+            <li class="favorite-item">
+              <a href="#" class="card-container">
+                <img
+                  src="./asset/Image forest-letter.jpg"
+                  width="310"
+                  height="174"
+                  alt="숲속 안의 오두막"
+                />
+                <div class="checkbox-container">
+                  <input type="checkbox" id="check-3" class="checkbox-input" />
+                  <label for="check-3">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.3328 4L6.0002 11.3328L2.6672 7.99971"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke="#F28D77"
+                      />
+                    </svg>
+                  </label>
+                </div>
+              </a>
+              <h4 class="favorite-movie-title">숲에서 온 편지</h4>
+              <p class="movie-genre">판타지 • 드라마 • 전체</p>
+            </li>
+            <li class="favorite-item">
+              <a href="#" class="card-container">
+                <img
+                  src="./asset/Image night-diver.jpg"
+                  width="310"
+                  height="174"
+                  alt="바다속 잠수부"
+                />
+                <div class="checkbox-container">
+                  <input type="checkbox" id="check-4" class="checkbox-input" />
+                  <label for="check-4">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.3328 4L6.0002 11.3328L2.6672 7.99971"
+                        stroke-width="1.7"
+                        stroke-linecap="round"
+                        stroke="#F28D77"
+                      />
+                    </svg>
+                  </label>
+                </div>
+              </a>
+              <h4 class="favorite-movie-title">밤의 잠수부</h4>
+              <p class="movie-genre">스릴러 • 미스터리 • 15+</p>
+            </li>
+          </ul>
+        </div>
       </article>
       <article id="account-container" class="account-set">
         <h3>계정 설정</h3>
-        <section>
-          <ul class="account-list">
-            <li>
-              <div class="ac-setting">
+        <ul class="account-list">
+          <li>
+            <div class="ac-setting">
+              <div class="ac-setting-info">
                 <p>이메일</p>
                 <p>yolo202617@example.com</p>
-                <button type="" class="ac-button">변경</button>
               </div>
-            </li>
-            <li>
-              <div class="ac-setting">
+              <button type="" class="ac-button">변경</button>
+            </div>
+          </li>
+          <li>
+            <div class="ac-setting">
+              <div class="ac-setting-info">
                 <p>비밀번호</p>
                 <p>···········</p>
-                <button type="" class="ac-button">변경</button>
               </div>
-            </li>
-            <li>
-              <div class="ac-setting">
+              <button type="" class="ac-button">변경</button>
+            </div>
+          </li>
+          <li>
+            <div class="ac-setting">
+              <div class="ac-setting-info">
                 <p>멤버십</p>
                 <p>베이식 · 월 9,500원</p>
-                <button type="" class="ac-button">관리</button>
               </div>
-            </li>
-            <li>
-              <div class="ac-setting">
+              <button type="" class="ac-button">관리</button>
+            </div>
+          </li>
+          <li>
+            <div class="ac-setting">
+              <div class="ac-setting-info">
                 <p>표시 언어</p>
                 <p>한국어</p>
-                <button type="" class="ac-button">변경</button>
               </div>
-            </li>
-          </ul>
-          <div class="now-condition">
-            <p>내 계정으로 접속중입니다.</p>
-            <button type="ac-logout-button">
-              <span>로그아웃</span>
-            </button>
-          </div>
-        </section>
+              <button type="" class="ac-button">변경</button>
+            </div>
+          </li>
+        </ul>
+        <div class="now-condition">
+          <p>내 계정으로 접속중입니다.</p>
+          <button type="button" class="logout-button">
+            <span>로그아웃</span>
+          </button>
+        </div>
       </article>
     </main>
     <footer>
