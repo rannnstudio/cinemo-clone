@@ -29,3 +29,86 @@
 .checkbox-container :hover {
   cursor: pointer;
 }
+
+.mycard-container {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: #1A1C1F;
+  border-radius: 4px;
+  padding: 32px;
+}
+
+.user-profile {
+  display: flex;
+  gap: 28px;
+}
+
+.page-introduce {
+  color: #F28D77;
+  font-size: 11px;
+  font-family: Inter;
+}
+
+.main-mypage {
+  color: #F3F1ED;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.main-sub-title {
+  color: #ACAEB3;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.mycard-title {
+  display: flex;
+  align-items: center;
+  color: #F3F1ED;
+  font-size: 28px;
+}
+
+.introduction {
+  color: #ACAEB3;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.appendix {
+  color: #7e8289;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.user-profile-button {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 48px;
+  color: #F3F1ED;
+  border: 1px solid #303237;
+  border-radius: 4px;
+  padding: 11px 22px;
+}
+
+.profile-img{
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+}
+
+.mycard-title::after {
+  display:inline-block;
+  vertical-align: middle;
+  margin-left: 12px;
+  font-size: 11px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  content: "기본 프로필";
+  color: var(--surface);
+}
