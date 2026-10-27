@@ -1,0 +1,206 @@
+.banner-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 590px;
+  background-image:
+    linear-gradient(
+      80deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.7) 30%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.7) 10%,
+      rgba(0, 0, 0, 0) 20%
+    ),
+    url("../asset/Hero\ quiet-orbit.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner-container::after {
+  content: "";
+  top: 360px;
+  height: 230px;
+  z-index: -1;
+  background-color: #000003;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 00%;
+}
+
+.banner-title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+  width: 540px;
+  height: 330px;
+  margin: 84px 64px;
+  padding: 0;
+  position: absolute;
+}
+
+.title-label {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: auto;
+  height: 14px;
+  gap: 12px;
+  margin-bottom: auto;
+}
+.title-label::before {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--surface);
+  content: "";
+}
+
+.title-label > p:first-child {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  font-weight: medium;
+  line-height: auto;
+  color: var(--surface);
+}
+.title-label > p:last-child {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: auto;
+  color: var(--text3);
+}
+
+.banner-heading {
+  gap: 8px;
+  box-sizing: border-box;
+  width: auto;
+  height: 98px;
+  padding: 0;
+}
+.banner-heading h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: var(--text);
+}
+.banner-heading > p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: normal;
+  color: var(--text3);
+}
+.banner-genre {
+  display: flex;
+  gap: 12px;
+  width: 540px;
+  height: 14px;
+  color: var(--text3);
+}
+.banner-genre p:nth-child(odd) {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 12px;
+}
+.banner-genre p:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: auto;
+  font-size: 10px;
+}
+
+.banner-explain {
+  box-sizing: border-box;
+  width: 540px;
+  height: 60px;
+  padding: 0;
+}
+.banner-explain > p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  line-height: 185%;
+  color: var(--text3);
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  margin-top: auto;
+  gap: 12px;
+  box-sizing: border-box;
+  width: 272px;
+  height: 48px;
+}
+.banner-btn1 {
+  background-color: var(--surface);
+  box-sizing: border-box;
+  width: 151px;
+  height: 48px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 14px;
+  color: #241512;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: auto 22px;
+}
+.banner-btn2 {
+  background-color: #241512;
+  box-sizing: border-box;
+  width: 109px;
+  height: 48px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 14px;
+  color: var(--text);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: auto 22px;
+}
+
+.banner-caption {
+  box-sizing: border-box;
+  width: auto;
+  height: 37px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 8px;
+  right: 64px;
+  bottom: 72px;
+}
+
+.banner-caption p:first-child {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: normal;
+  color: var(--text);
+}
+.banner-caption p:last-child {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 10;
+  color: var(--text3);
+}
