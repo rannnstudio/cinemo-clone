@@ -74,6 +74,7 @@ h3 {
 
 .header-container .utility-group .icon:hover {
   color: var(--text);
+  font-weight: 700;
 }
 
 .utility-group {
