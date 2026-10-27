@@ -50,3 +50,47 @@ h3 {
   margin-top: 20px;
   color: var(--text2);
 }
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  padding: 0 64px;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+  gap: 56px;
+}
+
+.header-container {
+  gap: 56px;
+  display: flex;
+  font-size: 14px;
+  color: var(--text3);
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: normal;
+}
+
+.header-container .utility-group .icon:hover {
+  color: var(--text);
+}
+
+.utility-group {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-my-page {
+  color: var(--text);
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  align-items: center;
+}
+
+svg {
+  border-radius: 8px;
+}
