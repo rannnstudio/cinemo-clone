@@ -22,6 +22,10 @@
   position: relative;
 }
 
+.icon-home {
+  color: var(--text);
+  font-weight: 700;
+}
 .banner-container::after {
   content: "";
   top: 360px;
@@ -160,7 +164,7 @@
   padding: auto 22px;
 }
 .banner-btn2 {
-  background-color: #241512;
+  background-color: var(--accent);
   box-sizing: border-box;
   width: 109px;
   height: 48px;

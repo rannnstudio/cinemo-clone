@@ -6,6 +6,9 @@ main {
   gap: 48px;
 }
 
+.mypage-condition {
+  color: var(--surface);
+}
 .card-container {
   position: relative;
 }
@@ -229,12 +232,15 @@ h4 + p {
 }
 
 .account-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 180px 1fr 24px;
+  grid-template-rows: repeat(4, 65px);
   font-family: "Noto Sans KR", sans-serif;
 }
 
-.account-list li {
+.account-list > li {
+  grid-column: 1/-1;
+  width: 100%;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -262,6 +268,7 @@ h4 + p {
   width: 180px;
   color: var(--text3);
   line-height: normal;
+  flex-shrink: 0;
 }
 
 .ac-setting-info p:nth-child(2) {
@@ -273,13 +280,14 @@ h4 + p {
 
 .ac-button {
   box-sizing: border-box;
-  width: 24px;
+  width: fit-content;
   height: 16px;
   background: none;
   font-size: 13px;
   font-weight: 500;
   line-height: normal;
   color: var(--surface);
+  flex-shrink: 0;
 }
 
 .now-condition {
