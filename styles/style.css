@@ -1,6 +1,19 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header-container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 .banner-container {
   box-sizing: border-box;
   width: 100%;
+  max-width: 1312px;
+  flex: 1 1 auto;
+  overflow: hidden;
+  margin: 0 auto;
   height: 590px;
   background-image:
     linear-gradient(
@@ -25,17 +38,6 @@
 .icon-home {
   color: var(--text);
   font-weight: 700;
-}
-.banner-container::after {
-  content: "";
-  top: 360px;
-  height: 230px;
-  z-index: -1;
-  background-color: #000003;
-  position: absolute;
-  left: 0;
-  right: 0;
-  opacity: 00%;
 }
 
 .banner-title {
@@ -210,10 +212,19 @@
 }
 .movie {
   padding: 16px 64px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  flex: 0 0 auto;
   font-family: "Noto Sans KR", sans-serif;
   color: var(--text);
   box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .movie {
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 .movie-collection {
@@ -257,7 +268,7 @@
   display: flex;
   gap: 24px;
   overflow-x: auto;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   box-sizing: border-box;
 }
 
