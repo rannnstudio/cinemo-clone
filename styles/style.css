@@ -221,12 +221,6 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .movie {
-    grid-template-rows: repeat(2, 1fr);
-  }
-}
-
 .movie-collection {
   box-sizing: border-box;
 }
@@ -292,4 +286,10 @@
   color: var(--text3);
   font-weight: 400;
   line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .movie {
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
