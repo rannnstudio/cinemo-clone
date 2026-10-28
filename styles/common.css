@@ -16,6 +16,9 @@ body {
 h3 {
   font-size: 24px;
 }
+footer {
+  border-top: 1px solid #303237;
+}
 
 .footer {
   display: flex;
@@ -23,7 +26,6 @@ h3 {
   justify-content: center;
   gap: 20px;
   padding: 40px 64px;
-  border-top: 1px solid #303237;
 }
 
 .footer-menu {
@@ -38,7 +40,6 @@ h3 {
 }
 
 .footer-notice {
-  margin-top: 20px;
   font-size: 11px;
   font-family: "Noto Sans KR", sans-serif;
   color: var(--text2);
@@ -47,7 +48,6 @@ h3 {
 .footer-copyright {
   font-size: 10px;
   font-family: "Noto Sans KR", sans-serif;
-  margin-top: 20px;
   color: var(--text2);
 }
 
