@@ -1,3 +1,6 @@
+/* ==============================
+   기본 레이아웃
+============================== */
 body {
   margin: 0 auto;
 }
@@ -9,10 +12,7 @@ main {
   margin: 0 auto;
 }
 
-.user-name {
-  color: var(--surface);
-}
-
+/* 마이페이지 전체 콘텐츠 배치 */
 .mypage-container {
   display: flex;
   flex-direction: column;
@@ -22,53 +22,45 @@ main {
 .mypage-condition {
   color: var(--surface);
 }
-.card-container {
-  position: relative;
+
+/* 헤더 내 사용자 이름 색상 */
+
+.user-name {
+  color: var(--surface);
 }
 
-.card-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-bottom: 12px;
-}
-.checkbox-container {
-  top: 10px;
-  right: 10px;
-  width: 28px;
-  height: 28px;
-  position: absolute;
-  border-radius: 4px;
-  background-color: #171a23;
+/* ==============================
+   마이페이지 제목 및 소개
+============================== */
+/* 페이지 상단 소개 문구 */
+.page-introduce {
+  color: #f28d77;
+  font-size: 11px;
+  font-family: "Inter", sans-serif;
 }
 
-.checkbox-input {
-  opacity: 0;
-  width: 28px;
-  height: 28px;
+/* 마이페이지 메인 제목 */
+.main-mypage {
+  color: #f3f1ed;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 12px 0;
 }
 
-.checkbox-input:checked + label {
-  display: block;
+/* 메인 제목 하단 설명 */
+.main-sub-title {
+  color: #acaeb3;
+  font-size: 15px;
+  font-weight: 300;
 }
 
-.checkbox-input + label {
-  display: none;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.mypage-container {
+  margin: 0 auto;
 }
 
-.checkbox-container :hover {
-  cursor: pointer;
-}
-
+/* ==============================
+   사용자 프로필 카드
+============================== */
 .mycard-container {
   display: flex;
   justify-content: space-between;
@@ -89,6 +81,7 @@ main {
   flex-shrink: 0;
 }
 
+/* 사용자 이름 및 소개 텍스트 */
 .user-name-introduction {
   box-sizing: border-box;
   display: flex;
@@ -98,29 +91,8 @@ main {
   padding: 0;
   gap: 8px;
 }
-.page-introduce {
-  color: #f28d77;
-  font-size: 11px;
-  font-family: "Inter", sans-serif;
-}
 
-.mypage-container {
-  margin: 0 auto;
-}
-
-.main-mypage {
-  color: #f3f1ed;
-  font-size: 40px;
-  font-weight: bold;
-  margin: 12px 0;
-}
-
-.main-sub-title {
-  color: #acaeb3;
-  font-size: 15px;
-  font-weight: 300;
-}
-
+/* 사용자 프로필 이름 */
 .mycard-title {
   display: flex;
   align-items: center;
@@ -130,6 +102,20 @@ main {
   font-family: "Noto Sans KR", sans-serif;
 }
 
+/* 기본 프로필 표시 문구 */
+.mycard-title::after {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 12px;
+  font-size: 11px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  content: "기본 프로필";
+  color: var(--surface);
+}
+
+/* 프로필 소개 및 가입 정보 */
 .introduction {
   color: #acaeb3;
   font-size: 13px;
@@ -144,6 +130,12 @@ main {
   font-family: "Noto Sans KR", sans-serif;
 }
 
+/* 모바일 전용 가입 정보 숨김 */
+.appendix-mobile {
+  display: none;
+}
+
+/* 프로필 변경 버튼 */
 .user-profile-button {
   display: flex;
   gap: 8px;
@@ -157,23 +149,17 @@ main {
   padding: 11px 22px;
 }
 
+/* 프로필 변경 버튼 이미지 */
 .profile-img {
   width: 18px;
   height: 18px;
   margin-top: 4px;
 }
 
-.mycard-title::after {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 12px;
-  font-size: 11px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 500;
-  line-height: normal;
-  content: "기본 프로필";
-  color: var(--surface);
-}
+/* ==============================
+   찜한 콘텐츠 영역
+============================== */
+/* 찜한 콘텐츠 전체 레이아웃 */
 .my-favorite-container {
   box-sizing: border-box;
   width: 100%;
@@ -183,6 +169,8 @@ main {
   max-width: 1312px;
   gap: 24px;
 }
+
+/* 찜한 콘텐츠 제목 및 작품 수 */
 .mypage-pick-container {
   display: flex;
   justify-content: space-between;
@@ -207,6 +195,7 @@ main {
   line-height: normal;
 }
 
+/* 찜한 콘텐츠 4열 그리드 */
 .favorite-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -217,6 +206,7 @@ main {
   margin: 0;
 }
 
+/* 개별 영화 카드 */
 .favorite-item {
   box-sizing: border-box;
   width: 100%;
@@ -224,6 +214,23 @@ main {
   gap: 12px;
 }
 
+/* 영화 이미지 및 체크박스 기준 영역 */
+.card-container {
+  position: relative;
+}
+
+/* 영화 이미지 비율 유지 */
+.card-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/* 영화 제목 */
 .favorite-movie-title {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
@@ -232,6 +239,7 @@ main {
   line-height: normal;
 }
 
+/* 영화 정보 공통 스타일 */
 h4 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
@@ -248,6 +256,52 @@ h4 + p {
   line-height: normal;
 }
 
+/* ==============================
+   영화 선택 체크박스
+============================== */
+/* 이미지 우측 상단 체크박스 */
+.checkbox-container {
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  border-radius: 4px;
+  background-color: #171a23;
+}
+
+/* 기본 체크박스 숨김 */
+.checkbox-input {
+  opacity: 0;
+  width: 28px;
+  height: 28px;
+}
+
+/* 체크 시 체크 아이콘 표시 */
+.checkbox-input:checked + label {
+  display: block;
+}
+
+/* 체크하지 않은 상태의 아이콘 숨김 */
+.checkbox-input + label {
+  display: none;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 체크박스 마우스 커서 */
+.checkbox-container :hover {
+  cursor: pointer;
+}
+
+/* ==============================
+   계정 설정 영역
+============================== */
+/* 계정 설정 전체 레이아웃 */
 #account-container {
   box-sizing: border-box;
   width: 100%;
@@ -259,6 +313,7 @@ h4 + p {
   gap: 24px;
 }
 
+/* 계정 설정 제목 */
 .account-set > h3 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 24px;
@@ -267,18 +322,7 @@ h4 + p {
   line-height: normal;
 }
 
-.now-condition {
-  display: flex;
-  justify-content: space-between;
-}
-
-.account-list {
-  display: grid;
-  grid-template-columns: 180px 1fr 24px;
-  grid-template-rows: repeat(4, 65px);
-  font-family: "Noto Sans KR", sans-serif;
-}
-
+/* 계정 설정 개별 항목 */
 .account-list > li {
   grid-column: 1/-1;
   width: 100%;
@@ -286,6 +330,7 @@ h4 + p {
   border-bottom: 1px solid var(--border);
 }
 
+/* 계정 정보 및 변경 버튼 정렬 */
 .ac-setting {
   box-sizing: border-box;
   width: 100%;
@@ -298,12 +343,14 @@ h4 + p {
   justify-content: space-between;
 }
 
+/* 계정 정보 텍스트 정렬 */
 .ac-setting-info {
   display: flex;
   gap: 12px;
   min-width: 0;
 }
 
+/* 계정 설정 항목 이름 */
 .ac-setting-info p:first-child {
   font-size: 14px;
   font-weight: 500;
@@ -313,6 +360,7 @@ h4 + p {
   flex-shrink: 0;
 }
 
+/* 계정 설정 항목 정보 */
 .ac-setting-info p:nth-child(2) {
   font-size: 14px;
   font-weight: 500;
@@ -320,6 +368,7 @@ h4 + p {
   line-height: normal;
 }
 
+/* 계정 정보 변경 및 관리 버튼 */
 .ac-button {
   box-sizing: border-box;
   width: fit-content;
@@ -332,14 +381,25 @@ h4 + p {
   flex-shrink: 0;
 }
 
+/* 계정 설정 목록 */
+.account-list {
+  display: grid;
+  grid-template-columns: 180px 1fr 24px;
+  grid-template-rows: repeat(4, 65px);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 현재 계정 접속 상태 */
 .now-condition {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 16px;
   margin: 0;
+  align-items: center;
 }
 
+/* 접속 상태 안내 문구 */
 .now-condition p {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 11px;
@@ -348,6 +408,7 @@ h4 + p {
   line-height: normal;
 }
 
+/* 로그아웃 버튼 */
 .logout-button {
   box-sizing: border-box;
   width: auto;
@@ -359,49 +420,16 @@ h4 + p {
   color: var(--text3);
 }
 
-.appendix-mobile {
-  display: none;
-}
-
+/* ==============================
+   모바일 반응형 (768px 이하)
+============================== */
 @media (max-width: 768px) {
+  /* 모바일 메인 콘텐츠 여백 */
   main {
     padding: 36px 24px 24px;
   }
 
-  .my-favorite-container {
-    height: auto;
-  }
-  .ac-setting-info {
-    flex-direction: column;
-  }
-  .favorite-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    width: 100%;
-    height: auto;
-  }
-  .favorite-item {
-    width: 100%;
-    height: auto;
-  }
-  .mypage-favorite-container {
-    height: auto;
-  }
-  .favorite-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .user-profile-button svg {
-    display: none;
-  }
-  .user-profile-button {
-    padding: 12px 16px;
-    margin-left: auto;
-    height: 40px;
-    font-size: 13px;
-  }
+  /* 모바일 프로필 카드 세로 배치 */
   .mycard-container {
     display: flex;
     flex-direction: column;
@@ -410,44 +438,111 @@ h4 + p {
     gap: 24px;
     height: auto;
   }
+
+  /* 모바일 프로필 이미지 및 정보 정렬 */
   .user-profile {
     display: flex;
     align-items: center;
     gap: 20px;
   }
+
+  /* 모바일 프로필 이미지 크기 */
   .user-profile svg {
     width: 64px;
     height: 64px;
     flex-shrink: 0;
   }
+
+  /* 모바일 프로필 정보 간격 */
   .user-name-introduction {
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
+
+  /* 모바일 프로필 이름 크기 */
   .mycard-title {
     font-size: 22px;
   }
+
+  /* PC용 가입 정보 숨김 */
   .appendix-desk {
     display: none;
   }
+
+  /* 모바일용 가입 정보 표시 */
   .appendix-mobile {
     display: block;
     color: var(--text2);
     font-size: 11px;
     font-family: "Noto Sans KR", sans-serif;
   }
-  .mycard-container > a {
-    align-self: flex-end;
-  }
-  .mypage-condition {
-    display: none;
-  }
+
+  /* 모바일 프로필 변경 영역 */
   .mypage-change-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
     width: 100%;
+  }
+
+  /* 프로필 변경 버튼 위치 */
+  .mycard-container > a {
+    align-self: flex-end;
+  }
+
+  /* 프로필 변경 버튼 아이콘 숨김 */
+  .user-profile-button svg {
+    display: none;
+  }
+
+  /* 모바일 프로필 변경 버튼 */
+  .user-profile-button {
+    padding: 12px 16px;
+    margin-left: auto;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  /* 모바일에서 상태 문구 숨김 */
+  .mypage-condition {
+    display: none;
+  }
+
+  /* 찜한 콘텐츠 영역 높이 자동 조절 */
+  .my-favorite-container {
+    height: auto;
+  }
+
+  .mypage-favorite-container {
+    height: auto;
+  }
+
+  /* 모바일 찜한 콘텐츠 2열 그리드 */
+  .favorite-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* 모바일 영화 카드 크기 */
+  .favorite-item {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 모바일 영화 이미지 크기 */
+  .favorite-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* 모바일 계정 정보 세로 배치 */
+  .ac-setting-info {
+    flex-direction: column;
   }
 }

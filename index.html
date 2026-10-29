@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <!-- ==============================
+         1. 공통 헤더 영역
+    ============================== -->
     <div class="container">
       <div class="header-container">
         <header class="site-header">
           <div class="header-menu">
+            <!-- CINEMO 로고: 클릭 시 메인 페이지로 이동 -->
             <h1>
               <a class="logo" href="./index.html">
                 <svg
@@ -37,6 +41,7 @@
                 </svg>
               </a>
             </h1>
+            <!-- 주요 페이지 이동 메뉴 -->
             <nav class="utility-container">
               <ul class="utility-group">
                 <li class="icon icon-home"><a href="./index.html">홈</a></li>
@@ -48,6 +53,7 @@
               </ul>
             </nav>
           </div>
+          <!-- 사용자 프로필: 클릭 시 마이페이지로 이동 -->
           <a class="header-my-page" href="./mypage.html">
             <svg
               width="32"
@@ -96,8 +102,12 @@
           </a>
         </header>
       </div>
+      <!-- ==============================
+           메인 콘텐츠 영역
+      ============================== -->
       <main>
         <div class="main-container">
+          <!-- 이번 주 추천 작품을 소개하는 배너 -->
           <section class="banner-container">
             <div class="banner-title">
               <div class="title-label">
@@ -120,6 +130,7 @@
                   마지막 관측자는 그 고요속으로 한 걸음 다가선다.
                 </p>
               </div>
+              <!-- 배너의 작품 살펴보기·찜하기 버튼 UI -->
               <div class="button-container">
                 <button type="button" class="banner-btn1">
                   <svg
@@ -163,7 +174,9 @@
             </div>
           </section>
         </div>
+        <!-- 영화 컬렉션 목록 -->
         <section class="movie">
+          <!-- 첫 번째 영화 컬렉션: 오늘, 새로운 세계로 -->
           <article class="movie-collection">
             <div class="movie-collection-title">
               <div>
@@ -172,6 +185,7 @@
               </div>
               <a class="movie-count" href="#">4편의 이야기</a>
             </div>
+            <!-- 영화 포스터·제목·장르 정보를 표시하는 카드 목록 -->
             <ul class="movie-list">
               <li class="movie-card">
                 <a href="#">
@@ -223,6 +237,7 @@
               </li>
             </ul>
           </article>
+          <!-- 두 번째 영화 컬렉션: 밤이 깊어질 때 -->
           <article class="movie-collection">
             <div class="movie-collection-title">
               <div>
@@ -231,6 +246,7 @@
               </div>
               <a class="movie-count" href="#">4편의 이야기</a>
             </div>
+            <!-- 영화 포스터·제목·장르 정보를 표시하는 카드 목록 -->
             <ul class="movie-list">
               <li class="movie-card">
                 <a href="#">
@@ -284,6 +300,10 @@
           </article>
         </section>
       </main>
+      <!-- ==============================
+             푸터 영역
+      ============================== -->
+      <!-- 서비스 안내 및 저작권 정보 -->
       <footer class="footer-contianer">
         <div class="footer">
           <div class="footer-menu">
