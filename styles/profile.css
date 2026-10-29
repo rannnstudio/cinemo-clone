@@ -3,6 +3,12 @@ body {
   width: 100%;
   height: 724px;
 }
+
+.utility-container,
+.header-my-page {
+  display: none;
+}
+
 .profile-container {
   box-sizing: border-box;
   padding: 116px 64px 120px;
@@ -132,7 +138,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 75px;
+  padding-bottom: 75px;
 }
 
 @media screen and (max-width: 768px) {
