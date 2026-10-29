@@ -144,7 +144,7 @@ main {
 .my-favorite-container {
   box-sizing: border-box;
   width: 100%;
-  height: 275px;
+  height: auto;
   display: flex;
   flex-direction: column;
   max-width: 1312px;
@@ -178,15 +178,16 @@ main {
   display: flex;
   gap: 24px;
   width: 100%;
-  height: 222px;
+  height: auto;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .favorite-item {
   box-sizing: border-box;
   width: 310px;
-  height: 222px;
+  height: auto;
   gap: 12px;
 }
 
@@ -266,7 +267,8 @@ h4 + p {
 
 .ac-setting-info {
   display: flex;
-  gap: 24px;
+  gap: 12px;
+  min-width: 0;
 }
 
 .ac-setting-info p:first-child {
@@ -322,4 +324,93 @@ h4 + p {
   font-size: 13px;
   font-weight: 500;
   color: var(--text3);
+}
+
+.appendix-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .my-favorite-container {
+    height: auto;
+  }
+  .ac-setting-info {
+    flex-direction: column;
+  }
+  .favorite-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+    height: auto;
+  }
+  .favorite-item {
+    width: 100%;
+    height: auto;
+  }
+  .mypage-favorite-container {
+    height: auto;
+  }
+  .favorite-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .user-profile-button svg {
+    display: none;
+  }
+  .user-profile-button {
+    padding: 12px 16px;
+    margin-left: auto;
+    height: 40px;
+    font-size: 13px;
+  }
+  .mycard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    height: auto;
+  }
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .user-profile svg {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+  }
+  .user-name-introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .mycard-title {
+    font-size: 22px;
+  }
+  .appendix-desk {
+    display: none;
+  }
+  .appendix-mobile {
+    display: block;
+    color: var(--text2);
+    font-size: 11px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .mycard-container > a {
+    align-self: flex-end;
+  }
+  .mypage-condition {
+    display: none;
+  }
+  .mypage-change-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+  }
 }
