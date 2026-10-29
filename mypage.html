@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="./styles/mypage.css" />
   </head>
   <body>
+    <!-- ==============================
+         공통 헤더 영역
+    ============================== -->
     <div class="container">
       <div class="header-container">
         <header class="site-header">
+          <!-- CINEMO 로고: 클릭 시 메인 페이지로 이동 -->
           <div class="header-menu">
             <h1>
               <a class="logo" href="./index.html">
@@ -37,6 +41,7 @@
                 </svg>
               </a>
             </h1>
+            <!-- 주요 페이지 이동 메뉴 -->
             <nav class="utility-container">
               <ul class="utility-group">
                 <li class="icon icon-home"><a href="./index.html">홈</a></li>
@@ -48,6 +53,7 @@
               </ul>
             </nav>
           </div>
+          <!-- 사용자 프로필: 클릭 시 마이페이지로 이동 -->
           <a class="header-my-page" href="./mypage.html">
             <svg
               width="32"
@@ -96,8 +102,12 @@
           </a>
         </header>
       </div>
+      <!-- ==============================
+           마이페이지 주요 콘텐츠
+      ============================== -->
       <main>
         <div class="mypage-container">
+          <!-- 마이페이지 제목 및 소개 문구 -->
           <div class="page-introduce">
             <p>MY CINEMO</p>
             <h2 class="main-mypage">마이페이지</h2>
@@ -105,6 +115,7 @@
               취향을 모으고, 나만의 시간을 이어가세요.
             </p>
           </div>
+          <!-- 사용자 프로필 카드 영역 -->
           <div class="user-profile-container">
             <article class="mycard-container">
               <div class="user-profile">
@@ -148,12 +159,14 @@
                     </clipPath>
                   </defs>
                 </svg>
+                <!-- 프로필 이름 및 가입 정보 -->
                 <div class="user-name-introduction">
                   <h2 class="mycard-title">욜로</h2>
                   <p class="introduction">나만의 영화 노트</p>
                   <p class="appendix-desk">2026년 10월부터 함께하는 중</p>
                 </div>
               </div>
+              <!-- 가입 정보 및 프로필 변경 링크 -->
               <div class="mypage-change-container">
                 <p class="appendix-mobile">2026.10가입</p>
                 <a href="./profile.html" class="user-profile-button">
@@ -176,12 +189,14 @@
               </div>
             </article>
           </div>
+          <!-- 찜한 콘텐츠 목록 -->
           <article class="my-favorite-container">
             <div class="mypage-pick-container">
               <h3 class="mypage-pick">내가 찜한 콘텐츠</h3>
               <p>4편</p>
             </div>
             <div class="mypage-favorite-container">
+              <!-- 영화 카드 4개를 보여주는 목록 -->
               <ul class="favorite-list">
                 <li class="favorite-item">
                   <div>
@@ -192,6 +207,7 @@
                         height="174"
                         alt="저녁 해변 걷는 중"
                       />
+                      <!-- 찜한 콘텐츠를 선택하는 체크박스 -->
                       <div class="checkbox-container">
                         <input
                           type="checkbox"
@@ -330,6 +346,7 @@
               </ul>
             </div>
           </article>
+          <!-- 계정 설정: 이메일·비밀번호·멤버십·표시 언어 -->
           <article id="account-container" class="account-set">
             <h3>계정 설정</h3>
             <ul class="account-list">
@@ -370,6 +387,7 @@
                 </div>
               </li>
             </ul>
+            <!-- 접속 상태 및 로그아웃 버튼 -->
             <div class="now-condition">
               <p>내 계정으로 접속중입니다.</p>
               <button type="button" class="logout-button">
@@ -380,6 +398,10 @@
         </div>
       </main>
     </div>
+    <!-- ==============================
+           푸터 영역
+    ============================== -->
+    <!-- 서비스 안내 및 저작권 정보 -->
     <footer class="footer-contianer">
       <div class="footer">
         <div class="footer-menu">
