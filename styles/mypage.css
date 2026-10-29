@@ -9,6 +9,10 @@ main {
   margin: 0 auto;
 }
 
+.user-name {
+  color: var(--surface);
+}
+
 .mypage-container {
   display: flex;
   flex-direction: column;
@@ -23,6 +27,11 @@ main {
 }
 
 .card-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 4px;
   margin-bottom: 12px;
 }
@@ -79,6 +88,7 @@ main {
 .user-profile svg {
   flex-shrink: 0;
 }
+
 .user-name-introduction {
   box-sizing: border-box;
   display: flex;
@@ -198,25 +208,25 @@ main {
 }
 
 .favorite-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 24px;
   width: 100%;
   height: auto;
   padding: 0;
   margin: 0;
-  flex-wrap: wrap;
 }
 
 .favorite-item {
   box-sizing: border-box;
-  width: 310px;
+  width: 100%;
   height: auto;
   gap: 12px;
 }
 
 .favorite-movie-title {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--text);
   line-height: normal;
@@ -354,6 +364,10 @@ h4 + p {
 }
 
 @media (max-width: 768px) {
+  main {
+    padding: 36px 24px 24px;
+  }
+
   .my-favorite-container {
     height: auto;
   }
