@@ -70,13 +70,27 @@ main {
 
 .user-profile {
   display: flex;
+  height: auto;
   gap: 28px;
+  align-items: center;
 }
 
+.user-profile svg {
+  flex-shrink: 0;
+}
+.user-name-introduction {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  line-height: 1.4;
+  padding: 0;
+  gap: 8px;
+}
 .page-introduce {
   color: #f28d77;
   font-size: 11px;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
 }
 
 .main-mypage {
@@ -97,18 +111,22 @@ main {
   align-items: center;
   color: #f3f1ed;
   font-size: 28px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .introduction {
   color: #acaeb3;
   font-size: 13px;
   font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
-.appendix {
+.appendix-desk {
   color: #7e8289;
   font-size: 11px;
   font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .user-profile-button {
