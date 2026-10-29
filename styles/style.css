@@ -2,10 +2,6 @@
   max-width: 100%;
   margin: 0 auto;
 }
-.header-container {
-  margin: 0 auto;
-  max-width: 1440px;
-}
 .main-container {
   display: block;
   width: 100%;
@@ -350,8 +346,6 @@
 
   .banner-caption {
     display: none;
-  }
-  .banner-explain > p {
   }
 
   .movie {
