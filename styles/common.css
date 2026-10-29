@@ -27,6 +27,8 @@ h3 {
   justify-content: center;
   gap: 20px;
   padding: 40px 64px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .footer-menu {
@@ -79,6 +81,7 @@ h3 {
   font-weight: 400;
   font-family: "Noto Sans KR", sans-serif;
   line-height: normal;
+  align-items: center;
 }
 
 .utility-container .utility-group .icon:hover {
