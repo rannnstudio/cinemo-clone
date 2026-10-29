@@ -1,11 +1,12 @@
 body {
   margin: 0 auto;
-  max-width: 1440px;
 }
 
 main {
   box-sizing: border-box;
   padding: 56px 64px 64px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .mypage-container {
@@ -91,6 +92,10 @@ main {
   color: #f28d77;
   font-size: 11px;
   font-family: "Inter", sans-serif;
+}
+
+.mypage-container {
+  margin: 0 auto;
 }
 
 .main-mypage {

@@ -60,6 +60,8 @@ h3 {
 
 .header-container {
   justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .site-header {
