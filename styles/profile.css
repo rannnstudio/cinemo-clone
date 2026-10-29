@@ -13,7 +13,24 @@ body {
 .profile-title {
   color: #f28d77;
   font-size: 10px;
-  font-family: Inter;
+}
+
+.profile-card {
+  width: 100%;
+}
+
+.profile-card > a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card > svg {
+  height: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .subtitle {
@@ -27,20 +44,54 @@ body {
 }
 
 .profile-option {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin-top: 50px;
   gap: 40px;
-  padding: 56px 0;
+  max-width: 728px;
+  margin: 56px auto;
 }
 
 .profile-name {
-  margin-top: 16px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-.user-name {
+.profile-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  aspect-ratio: 1 / 1;
+  max-width: 152px;
+  width: 100%;
+}
+
+.profile-card:nth-of-type(1) .profile-background {
+  background: url("../asset/Avatar 서연.svg") center / contain no-repeat;
+}
+
+.profile-card:nth-of-type(2) .profile-background {
+  background: url("../asset/Avatar\ 지호.svg") center / contain no-repeat;
+}
+
+.profile-card:nth-of-type(3) .profile-background {
+  background: url("../asset/Avatar\ 민.svg") center / contain no-repeat;
+}
+
+.profile-card:nth-of-type(4) .profile-background {
+  background: url("../asset/Avatar\ 게스트.svg") center / contain no-repeat;
+}
+
+.profile-initial {
+  font-size: 65.28px;
+  color: #f3f1ed;
+}
+
+.user-profile-name {
   color: #f3f1ed;
   font-size: 18px;
-  margin-bottom: auto;
 }
 
 .content {
@@ -62,7 +113,7 @@ button {
   justify-content: center;
   align-items: center;
   padding: 13px 20px;
-  margin: 0 auto;
+  margin: 30px auto 10px;
   color: #f3f1ed;
   border: 1px solid #303237;
   border-radius: 4px;
@@ -82,4 +133,74 @@ button {
   justify-content: center;
   align-items: center;
   margin-bottom: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-container {
+    padding: 24px;
+  }
+
+  .profile-select {
+    display: flex;
+    width: 342px;
+    height: 410px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .profile-option {
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(2, 2fr);
+    max-width: 260px;
+    margin: 30px auto;
+    gap: 20px 30px;
+  }
+
+  .profile-name {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .profile-card > svg {
+    box-sizing: border-box;
+    width: 120px;
+    height: 120px;
+    font-size: 65.25px;
+  }
+
+  .profile-card {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  .profile-background {
+    max-width: 120px;
+    width: 152px;
+    height: 152px;
+    flex-shrink: 0;
+  }
+
+  .user-profile-name {
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .profile-title h1 {
+    font-size: 28px;
+  }
+
+  button {
+    margin-top: 45px;
+  }
 }
